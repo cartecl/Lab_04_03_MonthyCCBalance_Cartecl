@@ -2,16 +2,16 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Opt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        //A program that starts with a credit card balance
+        // of $5000 and then calculates the interest at a rate of 17%.
+        // Assume the user does not make any payments.
+        // Display the interest due after one month and again after two months.
 
-        // Press Ctrl+R or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        int userBalance = 5000;
+        double interestOne = (userBalance * 0.17 * 1) / (100 * 12);
+        double interestTwo = (userBalance * 0.17 * 2) / (100 * 12);
 
-            // Press Ctrl+D to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Cmd+F8.
-            System.out.println("i = " + i);
-        }
+        System.out.println("Your interest after one month is: "+interestOne);
+        System.out.println("Your interest after two months is: "+interestTwo);
     }
 }
